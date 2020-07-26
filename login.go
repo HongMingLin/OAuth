@@ -120,7 +120,7 @@ func main() {
 	http.HandleFunc("/facebooklogin", facebooklogin)
 	http.HandleFunc("/facebookcallback", facebookcallback)
 
-	fmt.Println("服務器即將開啓，訪問地址 http://localhost:8080")
+	//fmt.Println("服務器即將開啓，訪問地址 http://localhost:8080")
 
 	//err := http.ListenAndServe(":0", nil)
 	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
