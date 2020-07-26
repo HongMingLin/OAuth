@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"io/ioutil"
 	"net/http"
+	"os"
 
 	//https://github.com/golang/oauth2
 	"golang.org/x/oauth2"
@@ -121,7 +122,8 @@ func main() {
 
 	fmt.Println("服務器即將開啓，訪問地址 http://localhost:8080")
 
-	err := http.ListenAndServe(":0", nil)
+	//err := http.ListenAndServe(":0", nil)
+	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	if err != nil {
 		fmt.Println("服務器開啓錯誤: ", err)
 	}
