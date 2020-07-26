@@ -21,7 +21,7 @@ var googleEndpotin = oauth2.Endpoint{
 var googleOauthConfig = &oauth2.Config{
 	ClientID:     "1013783811015-g2ajlk3sf78atgjl3e8p2c1ov2beg85p.apps.googleusercontent.com",
 	ClientSecret: "JAFkDYpCMKL6BVzZM_BUVOiq",
-	RedirectURL:  "http://localhost:8080/googlecallback",
+	RedirectURL:  "https://golang-oauth.herokuapp.com/googlecallback",
 	//https://developers.google.com/identity/protocols/oauth2/scopes
 	Scopes:   []string{"https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"},
 	Endpoint: googleEndpotin,
