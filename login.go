@@ -19,8 +19,8 @@ var googleEndpotin = oauth2.Endpoint{
 
 //https://godoc.org/golang.org/x/oauth2#example-Config
 var googleOauthConfig = &oauth2.Config{
-	ClientID:     "1013783811015-g2ajlk3sf78atgjl3e8p2c1ov2beg85p.apps.googleusercontent.com",
-	ClientSecret: "JAFkDYpCMKL6BVzZM_BUVOiq",
+	ClientID:     "ClientID",
+	ClientSecret: "ClientSecret",
 	RedirectURL:  "https://golang-oauth.herokuapp.com/googlecallback",
 	//https://developers.google.com/identity/protocols/oauth2/scopes
 	Scopes:   []string{"https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email"},
@@ -34,8 +34,8 @@ var facebookEndpoint = oauth2.Endpoint{
 }
 
 var facebookOauthConfig = &oauth2.Config{
-	ClientID:     "1707037259472125",
-	ClientSecret: "81361d8fadf9fb31c5b74670ad92cf71",
+	ClientID:     "ClientID",
+	ClientSecret: "ClientSecret",
 	RedirectURL:  "https://golang-oauth.herokuapp.com/facebookcallback",
 	//https://developers.facebook.com/docs/facebook-login/permissions/#reference-email
 	Scopes:   []string{"public_profile", "email"},
