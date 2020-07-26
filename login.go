@@ -36,7 +36,7 @@ var facebookEndpoint = oauth2.Endpoint{
 var facebookOauthConfig = &oauth2.Config{
 	ClientID:     "1707037259472125",
 	ClientSecret: "81361d8fadf9fb31c5b74670ad92cf71",
-	RedirectURL:  "http://localhost:8080/facebookcallback",
+	RedirectURL:  "https://golang-oauth.herokuapp.com/facebookcallback",
 	//https://developers.facebook.com/docs/facebook-login/permissions/#reference-email
 	Scopes:   []string{"public_profile", "email"},
 	Endpoint: facebookEndpoint,
